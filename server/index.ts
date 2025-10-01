@@ -92,7 +92,7 @@ app.use((req, res, next) => {
   // -------------------- Start Server -------------------- //
   const port = Number(process.env.PORT) || 3000;
   const host = process.env.HOST || "localhost";
-
+  console.log(host);
   app.listen(port, host, () => {
     console.log(`Server running on http://${host}:${port}`);
   });
